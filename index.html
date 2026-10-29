@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramu Kaka Deep Cleaning Services | Book Online</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-blue-900 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    ✨ Sparkling clean homes guaranteed! Fast & reliable service in your neighborhood.
+  </aside>
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-sm border-b border-blue-100 sticky top-0 z-30">
+    <div class="max-w-4xl mx-auto px-4 py-3 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <!-- Brand Logo / Title -->
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-500/20">
+          <i class="fa-solid fa-sparkles text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-extrabold text-blue-950 tracking-tight leading-tight">
+            Ramu Kaka Deep Cleaning Services
+          </h1>
+          <p class="text-xs text-blue-600 font-medium flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Professional & Trusted Experts
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Action: Call Now -->
+      <a href="tel:9063018021" 
+         class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl text-sm font-semibold transition-all duration-200 border border-blue-200 shadow-sm active:scale-95"
+         title="Call Ramu Kaka Services">
+        <i class="fa-solid fa-phone-volume text-sm"></i>
+        <span>Call Now: 9063018021</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Booking Area -->
+  <main class="flex-grow max-w-xl w-full mx-auto px-4 py-8 sm:py-12">
+
+    <!-- Hero Intro Card -->
+    <div class="text-center mb-8">
+      <div class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full uppercase tracking-wider mb-2">
+        Instant WhatsApp Booking
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-950 tracking-tight">
+        Schedule Your Deep Clean
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-md mx-auto">
+        Fill out your cleaning requirements below. You will be redirected straight to WhatsApp to confirm your slot with us instantly!
+      </p>
+    </div>
+
+    <!-- Booking Card Form -->
+    <div class="bg-white rounded-2xl shadow-xl shadow-blue-900/5 border border-blue-100 p-6 sm:p-8 relative">
+      <div class="absolute -top-3 right-6 bg-emerald-500 text-white text-[11px] font-bold px-3 py-0.5 rounded-full shadow uppercase tracking-wider">
+        No Advance Needed
+      </div>
+
+      <form id="bookingForm" class="space-y-5" novalidate>
+        
+        <!-- Customer Name -->
+        <div>
+          <label for="customerName" class="block text-sm font-semibold text-slate-700 mb-1.5">
+            Customer Name <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <input 
+              type="text" 
+              id="customerName" 
+              placeholder="e.g. Rahul Sharma" 
+              required
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 text-slate-800 placeholder-slate-400 text-sm transition outline-none"
+            >
+          </div>
+          <p id="nameError" class="text-rose-500 text-xs mt-1.5 hidden flex items-center gap-1">
+            <i class="fa-solid fa-circle-exclamation text-[10px]"></i> Please enter your name.
+          </p>
+        </div>
+
+        <!-- Service Category -->
+        <div>
+          <label for="serviceCategory" class="block text-sm font-semibold text-slate-700 mb-1.5">
+            Service Category <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <i class="fa-solid fa-broom"></i>
+            </div>
+            <select 
+              id="serviceCategory" 
+              required
+              class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 text-slate-800 bg-white text-sm transition outline-none appearance-none cursor-pointer"
+            >
+              <option value="" disabled selected>Select a cleaning service</option>
+              <option value="Sofa Cleaning">🛋️ Sofa Cleaning</option>
+              <option value="Mattress Cleaning">🛏️ Mattress Cleaning</option>
+              <option value="Carpet Cleaning">🧼 Carpet Cleaning</option>
+              <option value="Bathroom Deep Clean">🚿 Bathroom Deep Clean</option>
+              <option value="Kitchen Deep Clean">🍳 Kitchen Deep Clean</option>
+              <option value="Full Home Deep Cleaning">🏠 Full Home Deep Cleaning</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400">
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </div>
+          </div>
+          <p id="serviceError" class="text-rose-500 text-xs mt-1.5 hidden flex items-center gap-1">
+            <i class="fa-solid fa-circle-exclamation text-[10px]"></i> Please choose a service category.
+          </p>
+        </div>
+
+        <!-- Preferred Date -->
+        <div>
+          <label for="preferredDate" class="block text-sm font-semibold text-slate-700 mb-1.5">
+            Preferred Date <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            <input 
+              type="date" 
+              id="preferredDate" 
+              required
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 text-slate-800 text-sm transition outline-none"
+            >
+          </div>
+          <p id="dateError" class="text-rose-500 text-xs mt-1.5 hidden flex items-center gap-1">
+            <i class="fa-solid fa-circle-exclamation text-[10px]"></i> Please select your preferred date.
+          </p>
+        </div>
+
+        <!-- Additional Notes -->
+        <div>
+          <label for="additionalNotes" class="block text-sm font-semibold text-slate-700 mb-1.5">
+            Additional Notes <span class="text-slate-400 font-normal">(Optional)</span>
+          </label>
+          <textarea 
+            id="additionalNotes" 
+            rows="3" 
+            placeholder="e.g. 3-seater sofa + 2 armchairs, water stains on mattress, gate code, etc."
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 text-slate-800 placeholder-slate-400 text-sm transition outline-none resize-none"
+          ></textarea>
+        </div>
+
+        <!-- Submit to WhatsApp Button -->
+        <div class="pt-2">
+          <button 
+            type="submit" 
+            id="submitBtn"
+            class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-600/30 active:scale-[0.98] transition-all duration-150 flex items-center justify-center gap-2.5 text-base cursor-pointer"
+          >
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span>Book via WhatsApp</span>
+          </button>
+          <p class="text-center text-xs text-slate-500 mt-2.5">
+            Direct chat with <span class="font-medium text-slate-700">+91 9063018021</span>
+          </p>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Trust Badges & Features -->
+    <div class="grid grid-cols-3 gap-3 mt-8 text-center text-slate-600">
+      <div class="bg-white p-3 rounded-xl border border-blue-50 shadow-sm flex flex-col items-center">
+        <i class="fa-solid fa-shield-halved text-blue-600 text-lg mb-1"></i>
+        <span class="text-xs font-semibold text-slate-800">100% Verified</span>
+        <span class="text-[10px] text-slate-400">Trained Staff</span>
+      </div>
+      <div class="bg-white p-3 rounded-xl border border-blue-50 shadow-sm flex flex-col items-center">
+        <i class="fa-solid fa-pump-soap text-blue-600 text-lg mb-1"></i>
+        <span class="text-xs font-semibold text-slate-800">Eco Chemicals</span>
+        <span class="text-[10px] text-slate-400">Safe for kids & pets</span>
+      </div>
+      <div class="bg-white p-3 rounded-xl border border-blue-50 shadow-sm flex flex-col items-center">
+        <i class="fa-solid fa-clock text-blue-600 text-lg mb-1"></i>
+        <span class="text-xs font-semibold text-slate-800">On-Time</span>
+        <span class="text-[10px] text-slate-400">Quick Response</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 mt-6">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-2 mb-2 text-blue-900 font-bold text-sm">
+        <i class="fa-solid fa-sparkles text-blue-600"></i>
+        <span>Ramu Kaka Deep Cleaning Services</span>
+      </div>
+      <p class="text-xs text-slate-500">
+        &copy; <span id="year"></span> Ramu Kaka Deep Cleaning Services. All rights reserved.
+      </p>
+      <p class="text-[11px] text-slate-400 mt-1">
+        Helpline & WhatsApp: +91 9063018021
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script for Booking Validation & WhatsApp Deep-link generation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Set minimum date to today so past dates cannot be booked
+      const dateInput = document.getElementById('preferredDate');
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+
+      const form = document.getElementById('bookingForm');
+      const nameInput = document.getElementById('customerName');
+      const serviceSelect = document.getElementById('serviceCategory');
+      const notesInput = document.getElementById('additionalNotes');
+
+      const nameError = document.getElementById('nameError');
+      const serviceError = document.getElementById('serviceError');
+      const dateError = document.getElementById('dateError');
+
+      // Clear error on input
+      nameInput.addEventListener('input', () => {
+        nameError.classList.add('hidden');
+        nameInput.classList.remove('border-rose-500');
+      });
+      serviceSelect.addEventListener('change', () => {
+        serviceError.classList.add('hidden');
+        serviceSelect.classList.remove('border-rose-500');
+      });
+      dateInput.addEventListener('change', () => {
+        dateError.classList.add('hidden');
+        dateInput.classList.remove('border-rose-500');
+      });
+
+      // Handle Submit
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        let isValid = true;
+
+        const customerName = nameInput.value.trim();
+        const serviceCategory = serviceSelect.value;
+        const preferredDate = dateInput.value;
+        const additionalNotes = notesInput.value.trim();
+
+        // Validate Name
+        if (!customerName) {
+          nameError.classList.remove('hidden');
+          nameInput.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          nameError.classList.add('hidden');
+          nameInput.classList.remove('border-rose-500');
+        }
+
+        // Validate Service
+        if (!serviceCategory) {
+          serviceError.classList.remove('hidden');
+          serviceSelect.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          serviceError.classList.add('hidden');
+          serviceSelect.classList.remove('border-rose-500');
+        }
+
+        // Validate Date
+        if (!preferredDate) {
+          dateError.classList.remove('hidden');
+          dateInput.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          dateError.classList.add('hidden');
+          dateInput.classList.remove('border-rose-500');
+        }
+
+        if (!isValid) {
+          return;
+        }
+
+        // Format Date into readable string (DD-MM-YYYY)
+        const dateParts = preferredDate.split('-');
+        const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
+
+        // Construct pre-filled WhatsApp message
+        let message = `Hello Ramu Kaka Deep Cleaning Services,\n\nI would like to book a cleaning service.\n\n`;
+        message += `📋 *Booking Details:*\n`;
+        message += `• *Customer Name:* ${customerName}\n`;
+        message += `• *Service Required:* ${serviceCategory}\n`;
+        message += `• *Preferred Date:* ${formattedDate}\n`;
+        
+        if (additionalNotes) {
+          message += `• *Additional Notes:* ${additionalNotes}\n`;
+        } else {
+          message += `• *Additional Notes:* None\n`;
+        }
+
+        message += `\nPlease confirm availability and provide quotation. Thank you!`;
+
+        // Encode message for URL
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = "919063018021";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Open WhatsApp in a new tab
+        window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+      });
+    });
+  </script>
+</body>
+</html>
